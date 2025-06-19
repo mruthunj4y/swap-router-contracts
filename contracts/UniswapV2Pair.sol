@@ -1,13 +1,13 @@
-pragma solidity =0.5.16;
+// SPDX-License-Identifier: GPL-2.0-or-later
 
-import './interfaces/IUniswapV2Pair.sol';
-import './UniswapV2ERC20.sol';
+pragma solidity 0.7.6;
+import './libraries/UniswapV2ERC20.sol';
 import './libraries/Math.sol';
 import './libraries/UQ112x112.sol';
-import './interfaces/IERC20.sol';
-import './interfaces/IUniswapV2Factory.sol';
-import './interfaces/IUniswapV2Callee.sol';
-
+import '../contracts/interfaces/IERC20.sol';
+import '../contracts/interfaces/IUniswapV2Factory.sol';
+import '../contracts/interfaces/IUniswapV2Callee.sol';
+import './interfaces/IUniswapV2Pair.sol';
 contract UniswapV2Pair is IUniswapV2Pair, UniswapV2ERC20 {
     using SafeMath  for uint;
     using UQ112x112 for uint224;

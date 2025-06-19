@@ -4,7 +4,7 @@ pragma abicoder v2;
 
 import '@surge/surge-core/contracts/libraries/SafeCast.sol';
 import '@surge/surge-core/contracts/libraries/TickMath.sol';
-import '@surge/surge-core/contracts/interfaces/IUniswapV3Pool.sol';
+import '@surge/surge-core/contracts/interfaces/IPool.sol';
 import '@surge/v3-periphery/contracts/libraries/Path.sol';
 import '@surge/v3-periphery/contracts/libraries/PoolAddress.sol';
 import '@surge/v3-periphery/contracts/libraries/CallbackValidation.sol';

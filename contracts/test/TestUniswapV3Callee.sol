@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: UNLICENSED
 pragma solidity =0.7.6;
 
-import '@surge/surge-core/contracts/interfaces/callback/IUniswapV3SwapCallback.sol';
+import '@surge/surge-core/contracts/interfaces/callback/ISwapCallback.sol';
 import '@surge/surge-core/contracts/libraries/SafeCast.sol';
-import '@surge/surge-core/contracts/interfaces/IUniswapV3Pool.sol';
+import '@surge/surge-core/contracts/interfaces/IPool.sol';
 import '@openzeppelin/contracts/token/ERC20/IERC20.sol';
 
 contract TestUniswapV3Callee is IUniswapV3SwapCallback {

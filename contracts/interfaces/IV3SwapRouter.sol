@@ -2,11 +2,12 @@
 pragma solidity >=0.7.5;
 pragma abicoder v2;
 
-import '@surge/surge-core/contracts/interfaces/callback/IUniswapV3SwapCallback.sol';
+
+import '@surge/surge-core/contracts/interfaces/callback/ISwapCallback.sol';
 
 /// @title Router token swapping functionality
 /// @notice Functions for swapping tokens via Uniswap V3
-interface IV3SwapRouter is IUniswapV3SwapCallback {
+interface IV3SwapRouter is ISwapCallback {
     struct ExactInputSingleParams {
         address tokenIn;
         address tokenOut;

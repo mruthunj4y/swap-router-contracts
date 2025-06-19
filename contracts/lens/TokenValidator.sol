@@ -4,8 +4,8 @@ pragma abicoder v2;
 
 import '@openzeppelin/contracts/token/ERC20/IERC20.sol';
 import '@surge/v3-periphery/contracts/base/PeripheryImmutableState.sol';
-import '../IUniswapV2Callee.sol';
-import '../IUniswapV2Pair.sol';
+import '../interfaces/IUniswapV2Callee.sol';
+import '../interfaces/IUniswapV2Pair.sol';
 import '../libraries/UniswapV2Library.sol';
 import '../interfaces/ISwapRouter02.sol';
 import '../interfaces/ITokenValidator.sol';

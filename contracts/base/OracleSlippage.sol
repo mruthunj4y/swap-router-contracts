@@ -8,7 +8,7 @@ import '@surge/v3-periphery/contracts/base/PeripheryImmutableState.sol';
 import '@surge/v3-periphery/contracts/base/BlockTimestamp.sol';
 import '@surge/v3-periphery/contracts/libraries/Path.sol';
 import '@surge/v3-periphery/contracts/libraries/PoolAddress.sol';
-import '@surge/surge-core/contracts/interfaces/IUniswapV3Pool.sol';
+import '@surge/surge-core/contracts/interfaces/IPool.sol';
 import '@surge/v3-periphery/contracts/libraries/OracleLibrary.sol';
 
 abstract contract OracleSlippage is IOracleSlippage, PeripheryImmutableState, BlockTimestamp {

@@ -1,15 +1,15 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
-import '@surge/surge-core/contracts/interfaces/IUniswapV3Pool.sol';
+import '@surge/surge-core/contracts/interfaces/IPool.sol';
 
 pragma solidity >=0.6.0;
 
 import '../libraries/PoolTicksCounter.sol';
 
 contract PoolTicksCounterTest {
-    using PoolTicksCounter for IUniswapV3Pool;
+    using PoolTicksCounter for IPool;
 
     function countInitializedTicksCrossed(
-        IUniswapV3Pool pool,
+        IPool pool,
         int24 tickBefore,
         int24 tickAfter
     ) external view returns (uint32 initializedTicksCrossed) {
